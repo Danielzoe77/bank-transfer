@@ -1,6 +1,9 @@
 <script>
-    // let may = "you like yam"
-    let ussdt= prompt(`
+    let code = "*894#";
+    pin = 32645;
+ let firstBank = (prompt(" dial *894#"));
+ if(firstBank === code){
+         let ussdt= prompt(`
     First Bank
     1>Quick Banking
     2>open an account
@@ -8,25 +11,23 @@
     4>FirstMonie
     5>Payattitude`)
     if(ussdt == 1){
+      let oney =
        prompt(`
     1>Transfer Money
     2>Airtime (self)
     3>Airtime (others)
     4>Data
-    5>Next page`)}
-     if(ussdt == 1){
+    5>Next page`)
+     if(oney == 1){
+      let honey =
        prompt(`
     1>To others
     2>Betwwen my firstbank Accounts`)
-    }
-    if(ussdt == 1){
-       +(prompt(`
-    Enter amount`))}
-    if(ussdt == 1){
-        +(prompt(`
-    Enter Account number`))
-    }
-    if(ussdt == 1){
+    
+    if (honey ==1){
+      prompt("enter amount")
+      let enter = prompt ( "Enter Account Number")
+    if(enter == 1){
        prompt(`
        Select recipient bank
     1>First Bank
@@ -34,15 +35,38 @@
     3>UBA
     4>Access Bank
     5>Search Bank`)}
-    if(ussdt == 1){
-       +(prompt(`
+    if(enter == 1){
+       prompt(`
     Transfer of N1000 to 
     OMOANON DANIEL EHIKIOYA 123451222 
     at N10 charge 
-    please enter your 5 digit PIN:`))}
-    if(ussdt == 1){
-       +(prompt(`
-    Successful Transaction`))}
+    please enter your 5 digit PIN:`)}
+    let pay = pin
+       prompt(`
+    Successful Transaction \n You can perform another transaction`)
+     if (pay !== pin ){
+         alert("incorrect pin")
+      }
+   }
+      
+      else if (honey ==2){
+      alert("you dont have a second account")
+    }
+    }
+   }
+
+   //  if(ussdt == 1){
+   //     +(prompt(`
+   //  Enter amount`))}
+   //  else if (ussdt == 2 ){
+   //       alert("You dont have a firstbank account that is link to this account")
+   //    }
+      
+   else if(firstBank !==code || ""){
+      alert("incorrect code");
+   }}
+
+   
     
     
     
